@@ -1,0 +1,28 @@
+{
+  "name": "@la-ots/stylelint-config",
+  "version": "1.0.0-beta.1",
+  "description": "Standard Stylelint configuration for Louisiana's Office of Technology Services",
+  "author": "Louisiana Office of Technology Services",
+  "license": "CC0-1.0",
+  "repository": "github:la-ots/stylelint-config",
+  "bugs": "https://github.com/la-ots/stylelint-config/issues",
+  "homepage": "https://github.com/la-ots/stylelint-config",
+  "keywords": [
+    "stylelintconfig",
+    "stylelint-config",
+    "stylelint",
+    "la-ots",
+    "laots"
+  ],
+  "main": "index.js",
+  "peerDependencies": {
+    "stylelint": ">= 14"
+  },
+  "dependencies": {
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-standard": "^24.0.0"
+  }
+}
