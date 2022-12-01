@@ -15,6 +15,11 @@
     "laots"
   ],
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prettier-check": "prettier --check .",
+    "prettier-fix": "prettier --write ."
+  },
   "peerDependencies": {
     "stylelint": ">= 14"
   },
@@ -24,5 +29,9 @@
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-config-recommended-scss": "^8.0.0",
     "stylelint-config-standard": "^24.0.0"
+  },
+  "devDependencies": {
+    "@la-ots/eslint-config": "^1.0.0-beta.1",
+    "@la-ots/prettier-config": "^1.0.0-beta.1"
   }
 }
