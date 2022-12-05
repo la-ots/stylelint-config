@@ -1,6 +1,6 @@
 {
   "name": "@la-ots/stylelint-config",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Standard Stylelint configuration for Louisiana's Office of Technology Services",
   "author": "Louisiana Office of Technology Services",
   "license": "CC0-1.0",
@@ -15,14 +15,24 @@
     "laots"
   ],
   "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint **/*.js",
+    "lint:js:fix": "eslint **/*.js --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write --ignore-unknown ."
+  },
   "peerDependencies": {
     "stylelint": ">= 14"
   },
   "dependencies": {
-    "stylelint": "^14.15.0",
+    "stylelint": "^14.16.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-config-recommended-scss": "^8.0.0",
-    "stylelint-config-standard": "^24.0.0"
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "devDependencies": {
+    "@la-ots/eslint-config": "^1.0.1",
+    "@la-ots/prettier-config": "^1.0.0"
   }
 }
